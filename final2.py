@@ -44,6 +44,7 @@ elif len(final_number) == 23:
 elif len(final_number) == 25:
     print(final_number[12:17])
     real_final_number = float(final_number[12:17]) * 1000
+time.sleep(1)
 for i in range(1, int(real_final_number)+1):
     try:
         element = driver.find_element_by_xpath('/html/body/div[5]/div/div/div[2]/ul/div/li['+str(i)+']')
