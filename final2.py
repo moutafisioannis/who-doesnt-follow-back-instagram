@@ -127,8 +127,13 @@ for i in new_list_of_following:
         final_list.append(i)
 
 print(final_list)
-f = open("notfollowingback.txt", "w")
-f.write(str(final_list))
-f.close()
+try:
+    f = open("notfollowingback.txt", "w")
+    f.write(str(final_list))
+    f.close()
+except:
+    f = open("notfollowingback.txt", "x")
+    f.write(str(final_list))
+    f.close()
 
 
